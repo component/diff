@@ -1,0 +1,15 @@
+{
+  "name": "diff",
+  "repo": "component/diff",
+  "description": "calculate diffs between strings",
+  "version": "0.0.1",
+  "keywords": ["diff", "string", "difflib"],
+  "dependencies": {},
+  "development": {},
+  "license": "BSD",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "difflib.js"
+  ]
+}
