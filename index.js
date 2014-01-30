@@ -1,11 +1,8 @@
-var difflib = require('./difflib');
+var diff_match_patch = require('./diff_match_patch');
 
 function diff(oldText, newText) {
-  var sm = new difflib.SequenceMatcher(oldText, newText);
-  return sm.get_opcodes();
+  var dmp = new diff_match_patch();
+  return dmp.diff_main(oldText, newText);
 }
-
-// expose difflib
-diff.lib = difflib;
 
 module.exports = diff;
