@@ -1,7 +1,7 @@
 
 # diff
 
-  Calculate diffs between strings. This component is a simple wrapper around [diff match patch](https://github.com/cemerick/jsdifflib), by Neil Fraser from Google.
+  Calculate diffs between strings. This component is a simple wrapper around [diff match patch](https://code.google.com/p/google-diff-match-patch/), by Neil Fraser from Google.
 
   Also check the companion component for making patches, https://github.com/component/patch .
 
