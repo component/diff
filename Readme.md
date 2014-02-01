@@ -3,6 +3,8 @@
 
   Calculate diffs between strings. This component is a simple wrapper around [diff match patch](https://github.com/cemerick/jsdifflib), by Neil Fraser from Google.
 
+  Also check the companion component for making patches, https://github.com/component/patch .
+
 ## Installation
 
   Install with [component(1)](http://component.io):
