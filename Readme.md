@@ -23,7 +23,7 @@ Each 2-tuple has the following elements:
     [type, data]
 
 * `type` can be either: `-1` (deletion), `0` (equal), `+1` (insertion).
-* `data` is the text added or removed. in the case of operation `0` (equal), data is provided for context. The context is always large enough to uniquely identify the segment of the text being diffed.
+* `data` is the text added or removed. in the case of operation `0` (equal), data is provided for context.
 
 ## License
 
