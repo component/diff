@@ -2,7 +2,7 @@
   "name": "diff",
   "repo": "component/diff",
   "description": "calculate diffs between strings",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": ["diff", "string", "difflib"],
   "dependencies": {},
   "development": {},
