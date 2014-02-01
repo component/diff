@@ -15,14 +15,6 @@
 
 Calculates the diff between two strings and returns it.
 
-### diff.toDelta(diff)
-
-Converts a diff object into a delta string, a very compact representation.
-
-### diff.fromDelta(oldText, delta)
-
-Converts a delta string back into a diff. This requires the original text.
-
 #### Return format
 
 The return value is an array of [2-tuples](http://en.wikipedia.org/wiki/Tuple), describing what has changed and what has remained the same from `oldText` to `newText`.
@@ -32,6 +24,14 @@ Each 2-tuple has the following elements:
 
 * `type` can be either: `-1` (deletion), `0` (equal), `+1` (insertion).
 * `data` is the text added or removed. in the case of operation `0` (equal), data is provided for context.
+
+### diff.toDelta(diff)
+
+Converts a diff object into a delta string, a very compact representation.
+
+### diff.fromDelta(oldText, delta)
+
+Converts a delta string back into a diff. This requires the original text.
 
 ## License
 
