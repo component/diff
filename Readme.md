@@ -55,6 +55,34 @@ Becomes:
 
 Converts a delta string back into a diff. This requires the original text.
 
+### diff.old(diff)
+
+Returns the old (source) text from a diff.
+
+#### Example
+
+The call:
+
+    diff.old([[0,"hi "], [-1,"joe"], [1,"sarah"], [0,", I "], [1,"dis"], [0,"like "], [-1,"cu"], [0,"p"], [1,"an"], [0,"cakes"]])
+
+Returns:
+
+    'hi joe, I like cupcakes'
+
+### diff.new(diff)
+
+Returns the new (destination) text from a diff.
+
+#### Example
+
+The call:
+
+    diff.new([[0,"hi "], [-1,"joe"], [1,"sarah"], [0,", I "], [1,"dis"], [0,"like "], [-1,"cu"], [0,"p"], [1,"an"], [0,"cakes"]])
+
+Returns:
+
+    'hi sarah, I dislike pancakes'
+
 ## License
 
 

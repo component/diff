@@ -38,4 +38,28 @@ diff.fromDelta = function(oldText, delta) {
   return dmp.diff_fromDelta(oldText, delta);
 }
 
+/**
+ * Returns the old (source) text from a diff.
+ * @param {Array} diff
+ * @returns {String}
+ * @api public
+ */
+
+diff.old = function(diff) {
+  var dmp = new diff_match_patch();
+  return dmp.diff_text1(diff);
+}
+
+/**
+ * Returns the new (destination) text from a diff.
+ * @param {Array} diff
+ * @returns {String}
+ * @api public
+ */
+
+diff.new = function(diff) {
+  var dmp = new diff_match_patch();
+  return dmp.diff_text2(diff);
+}
+
 module.exports = diff;
