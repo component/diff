@@ -15,6 +15,16 @@
 
 Calculates the diff between two strings and returns it.
 
+#### Example
+
+The following call:
+
+    diff('hi joe, I like cupcakes', 'hi sarah, I dislike pancakes')
+
+Returns:
+
+    [[0,"hi "], [-1,"joe"], [1,"sarah"], [0,", I "], [1,"dis"], [0,"like "], [-1,"cu"], [0,"p"], [1,"an"], [0,"cakes"]]
+
 #### Return format
 
 The return value is an array of [2-tuples](http://en.wikipedia.org/wiki/Tuple), describing what has changed and what has remained the same from `oldText` to `newText`.
@@ -25,9 +35,21 @@ Each 2-tuple has the following elements:
 * `type` can be either: `-1` (deletion), `0` (equal), `+1` (insertion).
 * `data` is the text added or removed. in the case of operation `0` (equal), data is provided for context.
 
+The return format provided by `diff()` is verbose, as it contains the text of both strings. The delta format is more convenient for transmitting data over the network. (See `diff.toDelta()`)
+
 ### diff.toDelta(diff)
 
 Converts a diff object into a delta string, a very compact representation.
+
+#### Example
+
+The following diff:
+
+    [[0,"hi "], [-1,"joe"], [1,"sarah"], [0,", I "], [1,"dis"], [0,"like "], [-1,"cu"], [0,"p"], [1,"an"], [0,"cakes"]]
+
+Becomes:
+
+    "=3 -3  +sarah  =4  +dis    =5  -2  =1  +an =5"
 
 ### diff.fromDelta(oldText, delta)
 
