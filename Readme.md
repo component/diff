@@ -13,7 +13,15 @@
 
 ### diff(oldText, newText)
 
-Returns a diff between two strings, `oldText` and `newText`.
+Calculates the diff between two strings and returns it.
+
+### diff.toDelta(diff)
+
+Converts a diff object into a delta string, a very compact representation.
+
+### diff.fromDelta(oldText, delta)
+
+Converts a delta string back into a diff. This requires the original text.
 
 #### Return format
 
