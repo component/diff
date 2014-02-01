@@ -49,7 +49,7 @@ The following diff:
 
 Becomes:
 
-    "=3 -3  +sarah  =4  +dis    =5  -2  =1  +an =5"
+    "=3 -3  +sarah  =4  +dis  =5  -2  =1  +an =5"
 
 ### diff.fromDelta(oldText, delta)
 
