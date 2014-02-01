@@ -6,7 +6,7 @@
   "keywords": ["diff", "string", "difflib"],
   "dependencies": {},
   "development": {},
-  "license": "BSD",
+  "license": "Apache 2.0",
   "main": "index.js",
   "scripts": [
     "index.js",
